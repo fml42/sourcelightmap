@@ -422,7 +422,7 @@ namespace VRADFix
                 surface.lightmapLDR[selectedX, selectedY].r = Convert.ToByte(spinnerR.Value);
                 surface.lightmapLDR[selectedX, selectedY].g = Convert.ToByte(spinnerG.Value);
                 surface.lightmapLDR[selectedX, selectedY].b = Convert.ToByte(spinnerB.Value);
-                //surface.lightmapLDR[selectedX, selectedY].e = Convert.ToSByte(spinnerE.Value);
+                surface.lightmapLDR[selectedX, selectedY].e = Convert.ToSByte(spinnerE.Value);
             }
             updateLightmapViewer();
             
