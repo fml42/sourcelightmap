@@ -417,6 +417,13 @@ namespace VRADFix
         {
             selectedX = e.X / LUXEL_DISP_SIZE;
             selectedY = e.Y / LUXEL_DISP_SIZE;
+            if (e.Button == MouseButtons.Right)
+            {
+                surface.lightmapLDR[selectedX, selectedY].r = Convert.ToByte(spinnerR.Value);
+                surface.lightmapLDR[selectedX, selectedY].g = Convert.ToByte(spinnerG.Value);
+                surface.lightmapLDR[selectedX, selectedY].b = Convert.ToByte(spinnerB.Value);
+                surface.lightmapLDR[selectedX, selectedY].e = Convert.ToSByte(spinnerE.Value);
+            }
             updateLightmapViewer();
             
         }
